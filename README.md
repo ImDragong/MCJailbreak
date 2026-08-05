@@ -1,7 +1,7 @@
 # MCJailbreak
 This is not an offical business, scheme, game, or affiliated with any similar communities in which **MCJailbreak** may be confused by.
 
-<><><><><><><><><><><><><<><><><><><><><><><><><><><<><><><><><><><><><><><><><<>
+<><><><><><><><><><><><><<><><><><><><><><><><><><><<><><><><><><><><><><><>
 
 What is MC Jailbreak?
 

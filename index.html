@@ -1,8 +1,119 @@
 <!-- html comment, ts is lowkey buns -->
 <!DOCTYPE html>
 <html lang="en">
-  <body>
-    <h1>Work in Progress</h1>
-    <a href="https://sites.google.com/view/mcjb-wiki/">Visit the current website</a>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCJB Wiki</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for clean wiki icons -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-left">
+            <button id="toggle-sidebar" class="nav-btn" aria-label="Toggle Sidebar">
+                <i class="fas fa-bars"></i>
+            </button>
+            <span class="site-title">MCJB Wiki</span>
+        </div>
+        <div class="nav-right">
+            <div class="search-box">
+                <i class="fas fa-search search-icon"></i>
+                <input type="text" id="wiki-search" placeholder="Search wiki...">
+            </div>
+            <button id="theme-toggle" class="nav-btn" aria-label="Toggle Theme">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar" id="sidebar">
+            <nav class="sidebar-menu">
+                <div class="sidebar-section">
+                    <h3>Getting Started</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link active" data-target="home-content"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#about" class="nav-link" data-target="about-content"><i class="fas fa-info-circle"></i> About MCJB</a></li>
+                    </ul>
+                </div>
+                <div class="sidebar-section">
+                    <h3>Wiki Categories</h3>
+                    <ul>
+                        <li><a href="#guides" class="nav-link" data-target="guides-content"><i class="fas fa-book"></i> Documentation</a></li>
+                        <li><a href="#resources" class="nav-link" data-target="resources-content"><i class="fas fa-download"></i> Resources</a></li>
+                        <li><a href="#faq" class="nav-link" data-target="faq-content"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="content-area">
+            <!-- Home Section -->
+            <section id="home-content" class="wiki-section active">
+                <h1>Welcome to MCJB Wiki</h1>
+                <p class="subtitle">Your central knowledge hub and documentation repository.</p>
+                <hr>
+                <p>Welcome to the official repository. Use the sidebar navigation to explore available articles, updates, and configuration frameworks.</p>
+                <div class="info-box">
+                    <i class="fas fa-lightbulb"></i>
+                    <p><strong>Tip:</strong> You can quickly find specific topics using the real-time search bar at the top right of the page!</p>
+                </div>
+            </section>
+
+            <!-- About Section -->
+            <section id="about-content" class="wiki-section">
+                <h1>About MCJB</h1>
+                <hr>
+                <p>This section details the background, scope, and objectives of the MCJB initiative. Add your team milestones, system overviews, or project scope descriptions directly into this container layout.</p>
+            </section>
+
+            <!-- Guides Section -->
+            <section id="guides-content" class="wiki-section">
+                <h1>Documentation & Guides</h1>
+                <hr>
+                <p>Follow these step-by-step procedures to manage configuration dependencies.</p>
+                <details class="wiki-accordion">
+                    <summary>Step 1: Core Setup</summary>
+                    <div class="accordion-content">
+                        <p>Initialize your environment variables and confirm your installation binaries are pointing to the correct paths.</p>
+                    </div>
+                </details>
+                <details class="wiki-accordion">
+                    <summary>Step 2: Deployment Configuration</summary>
+                    <div class="accordion-content">
+                        <p>Execute local tests before packaging components for staging environments.</p>
+                    </div>
+                </details>
+            </section>
+
+            <!-- Resources Section -->
+            <section id="resources-content" class="wiki-section">
+                <h1>Resources & Downloads</h1>
+                <hr>
+                <p>Access project templates, guidelines, and downloadable assets below.</p>
+                <ul class="resource-list">
+                    <li><i class="far fa-file-pdf"></i> <a href="#">Project Architecture Specification.pdf</a></li>
+                    <li><i class="far fa-file-code"></i> <a href="#">Initial Configuration Script.sh</a></li>
+                </ul>
+            </section>
+
+            <!-- FAQ Section -->
+            <section id="faq-content" class="wiki-section">
+                <h1>Frequently Asked Questions</h1>
+                <hr>
+                <div class="faq-item">
+                    <h4>How do I request edit access to this Wiki?</h4>
+                    <p>Submit a pull request directly through the tracking workflow on the corresponding code repository.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
